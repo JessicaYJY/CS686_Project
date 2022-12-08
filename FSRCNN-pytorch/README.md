@@ -20,9 +20,9 @@ This repository is implementation of the ["Accelerating the Super-Resolution Con
 ### How to run
 
 ```
-python train.py --train-file "BLAH_BLAH/91-image_x2.h5" \
-                --eval-file "BLAH_BLAH/Set5_x2.h5" \
-                --outputs-dir "BLAH_BLAH/outputs" \
+python train.py --train-file "FSRCNN/91-image_x2.h5" \
+                --eval-file "FSRCNN/Set5_x2.h5" \
+                --outputs-dir "FSRCNN/outputs" \
                 --scale 1 \
                 --lr 1e-4 \
                 --batch-size 16 \
@@ -33,12 +33,12 @@ python train.py --train-file "BLAH_BLAH/91-image_x2.h5" \
 
 ## Test
 
-- Find the weights file under `BLAH_BLAH/output/x2/best_psnr.pth`
+- Find the weights file under `FSRCNN/output/x2/best_psnr.pth`
 - Test by applying your own image and to see the result
 
 ### How to run
 ```
-python test.py --weights-file "BLAH_BLAH/output/x2/best_psnr.pth" \
+python test.py --weights-file "FSRCNN/output/x2/best_psnr.pth" \
                --image-file "data/your_image.bmp" \
                --scale 2
 ```

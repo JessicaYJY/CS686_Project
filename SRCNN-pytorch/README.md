@@ -20,9 +20,9 @@ This repository is implementation of the ["Image Super-Resolution Using Deep Con
 ### How to run
 
 ```
-python train.py --train-file "BLAH_BLAH/urban100_x2.h5" \
-                --eval-file "BLAH_BLAH/Set5_x2.h5" \
-                --outputs-dir "BLAH_BLAH/outputs" \
+python train.py --train-file "SRCNN/urban100_x2.h5" \
+                --eval-file "SRCNN/Set5_x2.h5" \
+                --outputs-dir "SRCNN/outputs" \
                 --scale 2 \
                 --lr 1e-4 \
                 --batch-size 16 \
@@ -35,13 +35,13 @@ python train.py --train-file "BLAH_BLAH/urban100_x2.h5" \
 
 ## Test
 
-- Find the weights file under `BLAH_BLAH/output/x2/best_psnr.pth`
+- Find the weights file under `SRCNN/output/x2/best_psnr.pth`
 - Test by applying your own image and to see the result
 
 ### How to run
 ```
-python test.py --weights-file "BLAH_BLAH/output/x2/best_psnr.pth" \
-               --image-file "data/your_image.bmp" \
+python test.py --weights-file "SRCNN/output/x2/best_psnr.pth" \
+               --image-file "data/image.bmp" \
                --scale 2
 ```
 
