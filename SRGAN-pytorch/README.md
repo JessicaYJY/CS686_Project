@@ -1,4 +1,4 @@
-# SRCNN
+# SRGAN
 
 This repository is implementation of the ["Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network"](https://arxiv.org/abs/1609.04802).
 
@@ -44,7 +44,6 @@ optional arguments:\
 ## Result
 - Test result by pretained model 
   - [Original Pictures](https://drive.google.com/drive/folders/1S8aXek99FzXTc7HEMqR341ID2Uubxm_Y?usp=share_link)
-  - [weights file](https://drive.google.com/drive/folders/1XFVIY263p_QwRuOl7nJhrXiqORTCpG8y?usp=share_link)
   - [Image Test Result](https://drive.google.com/drive/folders/1QvDoP-U7Ux3CxgY_flRnxA4lqsDX9BD8?usp=share_link)
 
 
