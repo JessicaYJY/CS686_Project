@@ -44,7 +44,7 @@ optional arguments:\
 
 ## Result
 - Test result by pretained model 
-  - [Original Pictures](https://drive.google.com/drive/folders/1S8aXek99FzXTc7HEMqR341ID2Uubxm_Y?usp=share_link)
-  - [Image Test Result](https://drive.google.com/drive/folders/1QvDoP-U7Ux3CxgY_flRnxA4lqsDX9BD8?usp=share_link)
+  - [Original Pictures](https://drive.google.com/drive/folders/16INOjR2uTMbrpn2olo33kH8Qfs3mjDeN?usp=share_link)
+  - [Image Test Result](https://drive.google.com/drive/folders/16xeDE4kuEDCikmEWb6w0xVGEjUoI9czz?usp=share_link)
 
 

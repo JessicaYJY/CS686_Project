@@ -47,7 +47,7 @@ python test.py --weights-file "SRCNN/output/x2/best_psnr.pth" \
 
 ## Result
 - Test result by pretained model 
-  - [Original Pictures](https://drive.google.com/drive/folders/16FY-BWGAb0JktlzPfVgXWczCE75UkT09?usp=share_link)
-  - [Image Test Result](https://drive.google.com/drive/folders/1nF6Q-OQb5nlqYLWZ_OJW5NnoGQph-Qb_?usp=share_link)
+  - [Original Pictures](https://drive.google.com/drive/folders/1TipPbJwPtFtbt5G_TpQxuVHYRqw0iBGu?usp=share_link)
+  - [Image Test Result](https://drive.google.com/drive/folders/1_RVdwxC-YwUI0AUS_UXTyUBphUdxJa3p?usp=share_link)
 
 
