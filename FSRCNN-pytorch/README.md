@@ -13,17 +13,17 @@ This repository is implementation of the ["Accelerating the Super-Resolution Con
 
 ## Train
 
-- Selecting and download dataset we provid: [91-image](https://drive.google.com/drive/folders/1DlDbMYjYk9K2Z-Or83kSloDZZAcmVTQF?usp=share_link), [Set5](https://drive.google.com/drive/folders/1QAAYUWV4p4DiHynXxhxy5fHESYpsninY?usp=share_link), or [Urban-100](https://drive.google.com/drive/folders/1-32AkTyJoj-k5Dlx5SKmfJfCYbBMOK75?usp=share_link)
+- Selecting and download dataset we provid: [91-image](https://drive.google.com/drive/folders/1DlDbMYjYk9K2Z-Or83kSloDZZAcmVTQF?usp=share_link), Urban-100](https://drive.google.com/drive/folders/1-32AkTyJoj-k5Dlx5SKmfJfCYbBMOK75?usp=share_link), [Set5](https://drive.google.com/drive/folders/1QAAYUWV4p4DiHynXxhxy5fHESYpsninY?usp=share_link), [Set14](https://drive.google.com/drive/folders/18RqvSzVw_HBsh3ItdZG4Lq89Wc9HqkKc?usp=share_link), and [BSD100](https://drive.google.com/drive/folders/1doqVGCUc8_I1ylM65gKyl9WmMyWc2yrS?usp=share_link).
 
 - Otherwise, you can use `prepare.py` to create custom dataset by convering to HDF5.
 
 ### How to run
 
 ```
-python train.py --train-file "FSRCNN/91-image_x2.h5" \
+python train.py --train-file "FSRCNN/urban100_x2.h5" \
                 --eval-file "FSRCNN/Set5_x2.h5" \
                 --outputs-dir "FSRCNN/outputs" \
-                --scale 1 \
+                --scale 2 \
                 --lr 1e-4 \
                 --batch-size 16 \
                 --num-epochs 100 \
@@ -45,6 +45,5 @@ python test.py --weights-file "FSRCNN/output/x2/best_psnr.pth" \
 ## Result
 - Test result by pretained model 
   - [Original Pictures](https://drive.google.com/drive/folders/1yT8jEDv_8SYn_BEQOdhrnbx5MbM2MIvu?usp=share_link)
-  - [weights file](https://drive.google.com/drive/folders/18NmRT5KkwCXcxbSNZRid2WFqU0_VpKUu?usp=share_link)
   - [Image Test Result](https://drive.google.com/drive/folders/1l7Ngh76bdSdkW2_PBXBLylbhLFdj_CX3?usp=share_link)
 
