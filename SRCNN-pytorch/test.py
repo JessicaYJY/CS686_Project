@@ -8,8 +8,12 @@ import PIL.Image as pil_image
 from models import SRCNN
 from utils import convert_rgb_to_ycbcr, convert_ycbcr_to_rgb, calc_psnr
 
+import time
+
 
 if __name__ == '__main__':
+    time_start = time.time()
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--weights-file', type=str, required=True)
     parser.add_argument('--image-file', type=str, required=True)
@@ -49,6 +53,10 @@ if __name__ == '__main__':
 
     with torch.no_grad():
         preds = model(y).clamp(0.0, 1.0)
+
+    time_end = time.time()
+    time_use = time_end - time_start
+    print('time used: ', time_use)
 
     psnr = calc_psnr(y, preds)
     print('PSNR: {:.2f}'.format(psnr))
