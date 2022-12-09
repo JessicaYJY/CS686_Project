@@ -31,7 +31,7 @@ optional arguments:
 
 ## Test
 
-- Put your test image in the `test` folder, and test by applying your own image and to see the result.
+- Put your low-resolution test images in the `test` folder, and test by applying your own image and to see the result.
 
 ### How to run test
 ```
