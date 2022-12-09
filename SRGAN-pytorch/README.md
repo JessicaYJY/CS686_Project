@@ -17,7 +17,7 @@ This repository is implementation of the ["Photo-Realistic Single Image Super-Re
 
 - Put your images into folder `train`, `valid`, `test` folder in folder `data`.
 
-### How to run
+### How to train
 
 ```
 python train.py \
@@ -33,7 +33,7 @@ optional arguments:
 
 - Put your test image in the `test` folder, and test by applying your own image and to see the result.
 
-### How to run
+### How to run test
 ```
 python test_image.py --image_name="image_name.png" --model_path="best_SRGAN.pth"
 
@@ -43,7 +43,7 @@ optional arguments:\
 ```
 
 ## Result
-- Test result by pretained model 
+- Test result: 
   - [Original Pictures](https://drive.google.com/drive/folders/16INOjR2uTMbrpn2olo33kH8Qfs3mjDeN?usp=share_link)
   - [Image Test Result](https://drive.google.com/drive/folders/16xeDE4kuEDCikmEWb6w0xVGEjUoI9czz?usp=share_link)
 

@@ -13,15 +13,16 @@ This repository is implementation of the ["Image Super-Resolution Using Deep Con
 
 ## Train
 
+### Prepare the data
 - Selecting and download dataset we provid: [91-image](https://drive.google.com/drive/folders/1DlDbMYjYk9K2Z-Or83kSloDZZAcmVTQF?usp=share_link), [Urban-100](https://drive.google.com/drive/folders/1-32AkTyJoj-k5Dlx5SKmfJfCYbBMOK75?usp=share_link), [Set5](https://drive.google.com/drive/folders/1QAAYUWV4p4DiHynXxhxy5fHESYpsninY?usp=share_link), [Set14](https://drive.google.com/drive/folders/18RqvSzVw_HBsh3ItdZG4Lq89Wc9HqkKc?usp=share_link), and [BSD100](https://drive.google.com/drive/folders/1doqVGCUc8_I1ylM65gKyl9WmMyWc2yrS?usp=share_link).
 
 - Otherwise, you can use `prepare.py` to create custom dataset by convering to HDF5.
 
-### How to run
+### How to train
 
 ```
-python train.py --train-file "SRCNN/urban100_x2.h5" \
-                --eval-file "SRCNN/Set5_x2.h5" \
+python train.py --train-file "SRCNN/your_train_dataset.h5" \
+                --eval-file "SRCNN/your_validation_dataset.h5" \
                 --outputs-dir "SRCNN/outputs" \
                 --scale 2 \
                 --lr 1e-4 \
@@ -38,7 +39,7 @@ python train.py --train-file "SRCNN/urban100_x2.h5" \
 - Find the weights file under `SRCNN/output/x2/best_psnr.pth`
 - Test by applying your own image and to see the result
 
-### How to run
+### How to run test
 ```
 python test.py --weights-file "SRCNN/output/x2/best_psnr.pth" \
                --image-file "data/image.bmp" \
@@ -46,7 +47,7 @@ python test.py --weights-file "SRCNN/output/x2/best_psnr.pth" \
 ```
 
 ## Result
-- Test result by pretained model 
+- Test result:
   - [Original Pictures](https://drive.google.com/drive/folders/1TipPbJwPtFtbt5G_TpQxuVHYRqw0iBGu?usp=share_link)
   - [Image Test Result](https://drive.google.com/drive/folders/1_RVdwxC-YwUI0AUS_UXTyUBphUdxJa3p?usp=share_link)
 
