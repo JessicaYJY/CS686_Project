@@ -27,9 +27,9 @@ python train.py --train-file "SRCNN/your_train_dataset.h5" \
                 --scale 2 \
                 --lr 1e-4 \
                 --batch-size 16 \
-                --num-epochs 20 \
+                --num-epochs 100 \
                 --num-workers 8 \
-                --seed 123                
+                --seed 12345                
 ```
 
 
