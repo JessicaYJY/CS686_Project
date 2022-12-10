@@ -1,5 +1,5 @@
 import argparse
-import time
+import timeit
 
 import torch
 from PIL import Image
@@ -31,7 +31,12 @@ image = Image.open('data/test/' + IMAGE_NAME)
 image = Variable(ToTensor()(image), volatile=True).unsqueeze(0)
 if TEST_MODE:
     image = image.cuda()
-
+    
+    
+start = timeit.default_timer()
 out = model(image)
 out_img = ToPILImage()(out[0].data.cpu())
-out_img.save(IMAGE_NAME[:-4] + '_SRGAN_x' + str(UPSCALE_FACTOR)+'.png')
+out_img.save(IMAGE_NAME[:-15] + '_SRGAN_x' + str(UPSCALE_FACTOR)+'.png')
+stop = timeit.default_timer()
+
+print('Time: ', stop - start)  
